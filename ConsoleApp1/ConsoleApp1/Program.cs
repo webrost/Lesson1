@@ -24,52 +24,78 @@ namespace ConsoleApp1
             switch(operation)
             {
                 case "-":
+                    try
+                    {
+                        Console.WriteLine("Введите число");
+                        x = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + x);
+                        Console.WriteLine("Введите второе число");
+                        y = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + y);
+                        Console.WriteLine("Разность чисел: " + (x - y).ToString());
+                    }
+                    catch (Exception ex) {
+                        Console.WriteLine("Вы ввели неправильное число!!!");
+                    }
+                    
                     break;
+
+                case "+":
+                    try
+                    {
+                        Console.WriteLine("Введите число");
+                        x = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + x);
+                        Console.WriteLine("Введите второе число");
+                        y = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + y);
+                        Console.WriteLine("Сумма чисел: " + (y + x).ToString());
+                    }
+                    catch(Exception ex) {
+                        Console.WriteLine("Вы ввели неправильное число!!!");
+                    }
+                    break;
+
+                case "/":
+                    try
+                    {
+                        Console.WriteLine("Введите число");
+                        x = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + x);
+                        Console.WriteLine("Введите второе число");
+                        y = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + y);
+                        Console.WriteLine("Результат деления чисел: " + (x / y).ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Вы ввели неправильное число!!!");
+                    }
+                    break;
+
+                case "*":
+                    try
+                    {
+                        Console.WriteLine("Введите число");
+                        x = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + x);
+                        Console.WriteLine("Введите второе число");
+                        y = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Вы ввели: " + y);
+                        Console.WriteLine("Результат умножения чисел: " + (x * y).ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Вы ввели неправильное число!!!");
+                    }
+                    break;
+
                 default:
                     Console.WriteLine("Неправильная операция.");
                     break;
             }
 
-            if (operation == "+")
-            {
-                Console.WriteLine("Введите число");
-                x = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + x);
-                Console.WriteLine("Введите второе число");
-                y = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + y);
-                Console.WriteLine("Сумма чисел: " + (y + x).ToString());
-            }
-            if (operation == "-")
-            {
-                Console.WriteLine("Введите число");
-                x = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + x);
-                Console.WriteLine("Введите второе число");
-                y = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + y);
-                Console.WriteLine("Разность чисел: " + (x - y).ToString());
-            }
-            if (operation == "*")
-            {
-                Console.WriteLine("Введите число");
-                x = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + x);
-                Console.WriteLine("Введите второе число");
-                y = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + y);
-                Console.WriteLine("Результат умножения чисел: " + (x * y).ToString());
-            }
-            if (operation == "/")
-            {
-                Console.WriteLine("Введите число");
-                x = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + x);
-                Console.WriteLine("Введите второе число");
-                y = int.Parse(Console.ReadLine());
-                Console.WriteLine("Вы ввели: " + y);
-                Console.WriteLine("Результат деления чисел: " + (x / y).ToString());
-            }
+            
             Console.ReadLine();
 
         }
