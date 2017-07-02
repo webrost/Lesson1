@@ -9,12 +9,28 @@ namespace ConsoleApp1
     class Program
     {
         static int x, y;
+        static string operation;
 
         static void Main(string[] args)
         {
             Console.WriteLine("========================================");
             Console.WriteLine("Hello, World Mikha!!!");
             Console.WriteLine("========================================");
+
+            Console.WriteLine("Выберите операцию: +,-,*,/");
+            operation = Console.ReadLine();
+            if (operation == "+")
+            {
+            }
+            if ()
+            {
+            }
+            if ()
+            {
+            }
+            if ()
+            {
+            }
 
             Console.WriteLine("Введите число");
             x = int.Parse(Console.ReadLine());
