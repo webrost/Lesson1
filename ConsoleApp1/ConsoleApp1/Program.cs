@@ -19,6 +19,17 @@ namespace ConsoleApp1
 
             Console.WriteLine("Выберите операцию: +,-,*,/");
             operation = Console.ReadLine();
+
+            //----Использование оператора switch
+            switch(operation)
+            {
+                case "-":
+                    break;
+                default:
+                    Console.WriteLine("Неправильная операция.");
+                    break;
+            }
+
             if (operation == "+")
             {
                 Console.WriteLine("Введите число");
@@ -61,21 +72,6 @@ namespace ConsoleApp1
             }
             Console.ReadLine();
 
-            //Console.WriteLine("Введите число");
-            //x = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Вы ввели: " + x);
-            //Console.WriteLine("Введите второе число");
-            //y = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Вы ввели: " + y);
-            //Console.WriteLine("Сумма чисел: " + (y+x).ToString());
-            //Console.WriteLine("Введите число");
-            //x = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Вы ввели: " + x);
-            //Console.WriteLine("Введите второе число");
-            //y = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Вы ввели: " + y);
-            //Console.WriteLine("Результат умножения: " + (y * x).ToString());
-            //Console.ReadLine();
         }
     }
 }
