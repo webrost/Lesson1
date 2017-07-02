@@ -13,7 +13,7 @@ namespace ConsoleApp1
             Console.WriteLine("========================================");
             Console.WriteLine("Hello, World Mikha!!!");
             Console.WriteLine("========================================");
-            Console.Write("РПвоауатуц");
+            Console.Write("РПвоауатуцмс");
             Console.ReadLine();
         }
     }
